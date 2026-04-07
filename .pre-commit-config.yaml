@@ -20,7 +20,7 @@ repos:
         additional_dependencies: [black==25.1.0]
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.14.10
+  rev: v0.15.9
   hooks:
   - id: ruff-format
   - id: ruff-check
@@ -29,7 +29,7 @@ repos:
       - --fix
 
 - repo: https://github.com/neutrinoceros/inifix.git
-  rev: v6.1.1
+  rev: v6.1.2
   hooks:
     - id: inifix-format
 
@@ -43,7 +43,7 @@ repos:
       - --extend-ignore=B018,E402
 
 - repo: https://github.com/kynan/nbstripout
-  rev: 0.8.2
+  rev: 0.9.1
   hooks:
   - id: nbstripout
 
@@ -54,7 +54,7 @@ repos:
     files: README.md
 
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.2
     hooks:
     - id: codespell
       args: [-L, nd]
