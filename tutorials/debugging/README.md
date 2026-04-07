@@ -152,7 +152,7 @@ Kokkos tools are always enabled *at runtime* by setting the environment variable
 
 Here, we're going to use the Kernel logger. The kernel logger forces Kokkos to show which kernel is being launched, where it is, and when it finishes. This forces CPU and GPU to stay in sync by adding ``Kokkos::fence`` at the end of each ``idefix_for``
 
-So in practive, we enable Kokkos tools Kernel logger with
+So in practice, we enable Kokkos tools Kernel logger with
 ```shell
 export KOKKOS_TOOLS_LIBS=$KOKKOS_TOOLS_DIR/debugging/kernel-logger/libkp_kernel_logger.so
 ```
